@@ -152,7 +152,7 @@ function fetchCallSummary() {
 function initWebSocket() {
   updateConnectionStatus('connecting');
   
-  socket = new WebSocket("https://voice-ai-egk4.onrender.com/ws");
+  socket = new WebSocket("https://voice-ai-ck2m.onrender.com/ws");
 
   socket.onopen = () => {
     console.log("📡 WebSocket connected to backend");
