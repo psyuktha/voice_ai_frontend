@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vapi Voice Assistant</title>
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo-section">
+        <div class="logo-icon">🤖</div>
+        <h1>Vapi Voice Assistant</h1>
+        <p class="subtitle">Intelligent voice conversations powered by AI</p>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="call-controls">
+        <div class="status-indicator" id="status-indicator">
+          <div class="status-dot"></div>
+          <span id="status-text">Ready to start</span>
+        </div>
+        
+        <div class="call-button-container">
+          <button id="start-call" class="call-button">
+            <span class="button-icon">🎤</span>
+            <span class="button-text">Proceed</span>
+            <div class="button-ripple"></div>
+          </button>
+        </div>
+
+        <div class="connection-status" id="connection-status">
+          <div class="connection-dot"></div>
+          <span>Connecting...</span>
+        </div>
+      </div>
+
+      <div class="transcript-section" id="transcript-section">
+        <h3>Live Transcript</h3>
+        <div class="transcript-container" id="transcript-container">
+          <div class="transcript-placeholder">
+            Transcript will appear here during the call...
+          </div>
+        </div>
+      </div>
+
+      <div class="summary-section">
+        <div id="call-summary" class="call-summary-container">
+          <div class="summary-placeholder">
+            <div class="placeholder-icon">📝</div>
+            <h3>Call Summary</h3>
+            <p>Your call summary will appear here after the conversation ends.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Powered by Vapi AI • <span id="current-time"></span></p>
+    </footer>
+  </div>
+
+  <div class="loading-overlay" id="loading-overlay">
+    <div class="loading-spinner"></div>
+    <p>Processing your call...</p>
+  </div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
