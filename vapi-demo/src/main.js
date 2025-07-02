@@ -118,7 +118,7 @@ function clearTranscript() {
 function fetchCallSummary() {
   showLoading(true);
   
-  fetch("https://voice-ai-egk4.onrender.com/get-call-summary")
+  fetch("https://voice-ai-ck2m.onrender.com/get-call-summary")
     .then((response) => {
       if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
       return response.json();
