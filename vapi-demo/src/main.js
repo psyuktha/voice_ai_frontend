@@ -118,7 +118,7 @@ function clearTranscript() {
 function fetchCallSummary() {
   showLoading(true);
   
-  fetch("http://localhost:8000/get-call-summary")
+  fetch("https://voice-ai-egk4.onrender.com/get-call-summary")
     .then((response) => {
       if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
       return response.json();
@@ -152,7 +152,7 @@ function fetchCallSummary() {
 function initWebSocket() {
   updateConnectionStatus('connecting');
   
-  socket = new WebSocket("ws://localhost:8000/ws");
+  socket = new WebSocket("https://voice-ai-egk4.onrender.com/ws");
 
   socket.onopen = () => {
     console.log("📡 WebSocket connected to backend");
