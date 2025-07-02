@@ -3,7 +3,7 @@ export default {
   preview: {
     host: '0.0.0.0',
     port: parseInt(process.env.PORT) || 4173,
-    allowedHosts: ['*']  // or use your exact render domain for better security
+    allowedHosts: ['voice-ai-frontend-1vbf.onrender.com']
   },
   server: {
     host: '0.0.0.0',
